@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+var fulcrumAuto = require('../')
+var path = require('path');
+
+var argv = require('yargs')
+  .usage('Usage: [node] sequelize-auto-fulcrum -k <key> -f <form_id> -p <parent> -o [output] -a [additional]')
+  .demand(['k', 'f', 'p'])
+  .alias('k', 'key')
+  .alias('f', 'form_id')
+  .alias('p', 'parent')
+  .alias('o', 'output')
+  .alias('a', 'additional')
+  .describe('k', 'API Key.')
+  .describe('f', 'Form ID.')
+  .describe('p', 'Arbitrary name for the parent table.')
+  .describe('o', 'What directory to place the models.')
+  .describe('a', 'Path to a json file containing model definitions (for all tables) which are to be defined within a model\'s configuration parameter. For more info: https://sequelize.readthedocs.org/en/latest/docs/models-definition/#configuration')
+  .argv;
+
+var config = {};
+
+if (argv.o) {
+  config.directory = path.resolve(argv.o);
+}
+
+if (argv.a) {
+  config.additional = require(path.resolve(argv.a));
+}
+
+var auto = new fulcrumAuto(argv.k, argv.f, argv.p, config);
+
+auto.run(function (err) {
+  if (err) {
+    throw err;
+  }
+
+  console.log('Done!');
+});
