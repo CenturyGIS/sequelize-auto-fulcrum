@@ -14,5 +14,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "auto-fulcrum": "./bin/sequelize-auto-fulcrum",
+    "sequelize-auto-fulcrum": "./bin/sequelize-auto-fulcrum"
+  }
 }
