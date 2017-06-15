@@ -7,14 +7,15 @@ Automatically generate models for SequelizeJS from [Fulcrum](https://github.com/
 ### CLI
 
 ```
-[node] sequelize-auto-fulcrum -k <key> -f <form_id> -p <parent> -o
-[output] -a [additional]
+Usage: [node] auto-fulcrum -k <key> -f <form_id> -p <parent> -o [output] -s
+[schema] -a [additional]
 
 Options:
   -k, --key         API Key.                                          [required]
   -f, --form_id     Form ID.                                          [required]
   -p, --parent      Arbitrary name for the parent table.              [required]
   -o, --output      What directory to place the models.
+  -s, --schema      Schema name where tables should reside.
   -a, --additional  Path to a json file containing model definitions (for all
                     tables) which are to be defined within a model's
                     configuration parameter. For more info:
