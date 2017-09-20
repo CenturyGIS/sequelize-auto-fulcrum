@@ -2,6 +2,12 @@
 
 Automatically generate models for SequelizeJS from [Fulcrum](https://github.com/fulcrumapp) apps.  Concept and much of the code was originally derived from [sequelize-auto](https://github.com/sequelize/sequelize-auto).
 
+## Install
+
+```
+npm install sequelize-auto-fulcrum -g
+```
+
 ## Usage
 
 ### CLI
