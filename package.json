@@ -17,5 +17,12 @@
   "bin": {
     "auto-fulcrum": "./bin/sequelize-auto-fulcrum",
     "sequelize-auto-fulcrum": "./bin/sequelize-auto-fulcrum"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CenturyGIS/sequelize-auto-fulcrum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CenturyGIS/sequelize-auto-fulcrum/issues"
+  }                                                                       
 }
