@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "async": "^2.1.4",
+  "dependencies": {
+    "async": "^2.5.0",
     "fulcrum-app": "^1.5.0",
     "fulcrum-core": "^0.6.4",
     "yargs": "^6.4.0"
