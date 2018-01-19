@@ -31,7 +31,21 @@ Options:
 
 ### Node.js
 
-(Todo)
+```
+var FulcrumAuto = require(sequelize-auto-fulcrum);
+
+var options = {
+  directory: './models',
+  additional: {
+    createdAt: 'century_createdAt',
+    updatedAt: 'century_updatedAt',
+    freezeTableName: true,
+  },
+};
+
+var f = new FulcrumAuto(key, form_id, parentName, options);
+f.run();
+```
 
 ## Test
 
