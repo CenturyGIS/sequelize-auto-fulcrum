@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var fulcrumAuto = require('../')
+var fulcrumAuto = require('../');
 var path = require('path');
 
 var argv = require('yargs')

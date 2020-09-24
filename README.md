@@ -13,7 +13,7 @@ npm install sequelize-auto-fulcrum -g
 ### CLI
 
 ```
-Usage: [node] auto-fulcrum -k <key> -f <form_id> -p <parent> -o [output] -s
+Usage: [node] sequelize-auto-fulcrum -k <key> -f <form_id> -p <parent> -o [output] -s
 [schema] -a [additional]
 
 Options:
