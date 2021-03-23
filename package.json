@@ -1,6 +1,6 @@
 {
   "name": "sequelize-auto-fulcrum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -15,8 +15,8 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "auto-fulcrum": "./bin/sequelize-auto-fulcrum",
-    "sequelize-auto-fulcrum": "./bin/sequelize-auto-fulcrum"
+    "auto-fulcrum": "bin/sequelize-auto-fulcrum",
+    "sequelize-auto-fulcrum": "bin/sequelize-auto-fulcrum"
   },
   "repository": {
     "type": "git",
